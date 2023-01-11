@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Personal Portfolio Website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="" alt="">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-text">
+        <p>Full Stack Java Developer</p>
+        <h1>Hi, I'm <span>Rahul</span><br>From India..</h1>
+
+      </div>
+    </div>
+  </div>
+  <!-------------about------------->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="imagee/bc.jpg">
+        </div>
+        <div class="about-col-2"></div>
+        <h1 class="sub-title">About Me</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi veniam laborum nulla aliquam possimus eum in
+          pariatur, similique maiores adipisci illum quisquam ea, deserunt explicabo unde eius! Magni, eos incidunt.
+          Odio quod qui iste eum assumenda ad necessitatibus, animi iusto.</p>
+
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Ui/Ux</span><br>Designing Web/App interfaces</li>
+              <li><span>Web Development</span><br>Web App interfaces</li>
+              <li><span>App Development</span><br>Building Android App</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>Technician</span><br>Sasmos Het</li>
+              <li><span>DET</span><br>Sharada Motor Industries Ltd.</li>
+              <li><span>App Development</span><br>Building Android App</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2017-20</span><br>ME-Saroj Mohan Institute of Technology</li>
+              <li><span>2021-24</span><br>CSE - Birbhum Institute of Engineering Technology</li>
+            </ul>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+      
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contests");
+
+      function opentab(tabname){
+        for(tablink of tablinks){
+          tablink.classList.remove("active-link");
+        }
+        for(tabcontents of tabcontents){
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+
+  </script>
+
+
+</body>
+
+</html>
